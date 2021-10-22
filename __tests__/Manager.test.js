@@ -9,5 +9,9 @@ test('Can set office number via constructor argument', () => {
 })
 
 test('Can set name via constructor argument', () => {
+    const testName = alison;
+    const employee = new Manager (testName, 8,"alison@gmail.com", 8 )
+    expect(employee.name).toBe(testName)
     
 })
+
